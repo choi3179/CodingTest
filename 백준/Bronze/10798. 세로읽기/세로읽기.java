@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +11,8 @@ public class Main {
         for(int i=0;i<words.length;i++){
             String word = sc.nextLine();
             for(int j=0;j<word.length();j++){
+                if(word.charAt(j) == '\0')
+                    break;
                 words[i][j] = word.charAt(j);
             }
         }
